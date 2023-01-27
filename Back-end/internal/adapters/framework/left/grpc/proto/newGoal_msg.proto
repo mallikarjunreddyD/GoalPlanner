@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "./pb";
+
+message newGoalRequest {
+    string title = 1;
+    string purpose1 = 2;
+    string purpose2 = 3;
+}
+
+message newGoalResponse {
+    int32 value = 1;
+}

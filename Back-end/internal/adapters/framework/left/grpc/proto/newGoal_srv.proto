@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package pb;
+
+import "Back-end/internal/adapters/framework/left/grpc/proto/newGoal_msg.proto";
+
+option go_package = "./pb";
+
+service newGoalService {
+    rpc SetGoal(newGoalRequest) returns (newGoalResponse) {}
+}
